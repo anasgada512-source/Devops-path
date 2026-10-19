@@ -1,0 +1,15 @@
+{
+  "name": "devops-path",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Backend and DevOps engineer roadmap - MERN stack tutorial platform with code playground, blog and auth",
+  "scripts": {
+    "install:all": "npm --prefix server install && npm --prefix client install",
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "build": "npm --prefix server install && npm --prefix client install --include=dev && npm --prefix client run build",
+    "start": "npm --prefix server start",
+    "seed": "npm --prefix server run seed"
+  },
+  "engines": { "node": ">=18" }
+}
